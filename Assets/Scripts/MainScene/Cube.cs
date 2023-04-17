@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cube : Shape
 {
-    [SerializeField] private string _name;
-    [SerializeField] private Color _color;
-
-    public string Name { private set; get; }
-    public Color Color { set { _color = value; } }
-
     protected override void DisplayText()
     {
-        Debug.Log("Cube");
-        SetMaterialColor(_color);
+        SetText("Hello World!");
+        SetMaterialColor(Color);
     }
 }
